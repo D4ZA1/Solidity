@@ -83,23 +83,24 @@ contract VariableExample {
 
 Arrays store multiple items of the same type.
 ### 🔹 Fixed-size Array
-
+```solidity 
 uint[3] fixedArray = [1, 2, 3];
-
+```
 ### 🔹 Dynamic-size Array
-
+```solidity 
 uint[] public dynamicArray;
 
 function addElement(uint value) public {
     dynamicArray.push(value);
 }
-
+```
 ### 🔹 Common Array Functions
-Function	Description
-push(value)	Adds an element to the end
-pop()	Removes the last element
-length	Returns the number of elements
-delete arr[i]	Resets the value at index i to default
+|Function	|Description|
+|---------|-----------|
+|push(value)	|Adds an element to the end|
+|pop()	|Removes the last element|
+|length	|Returns the number of elements|
+|delete arr[i]	|Resets the value at index i to default|
 ### 🔹 Example
 ```solidity
 pragma solidity ^0.8.0;
@@ -120,27 +121,26 @@ contract ArrayExample {
 
 Functions are reusable blocks of code that perform actions.
 ### 🔹 Syntax
-
+```solidity 
 function functionName([parameters]) [visibility] [modifiers] [returns(returnType)] {
     // logic
 }
-
+```
 ### 🔹 Visibility
-Visibility	Description
-public	Accessible internally and externally
-private	Accessible only within the declaring contract
-internal	Accessible in the contract and derived contracts
-external	Callable only from external accounts or contracts
+|Visibility	 | Description |
+|------------|--------------|
+|public	     |Accessible internally and externally|
+|private	   |Accessible only within the declaring contract|
+|internal	   |Accessible in the contract and derived contracts|
+|external	   |Callable only from external accounts or contracts|
 ### 🔹 Function Modifiers
 
-    view: Does not modify the contract state
-
-    pure: Does not read or modify contract state
-
-    payable: Function can receive Ether
+- `view`: Does not modify the contract state
+- `pure`: Does not read or modify contract state
+- `payable`: Function can receive Ether
 
 ### 🔹 Public Function Example
-
+```solidity
 pragma solidity ^0.8.0;
 
 contract Math {
@@ -148,7 +148,7 @@ contract Math {
         return a + b;
     }
 }
-
+```
 ### 🔹 Private Function Example
 ```solidity
 pragma solidity ^0.8.0;
