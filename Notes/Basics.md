@@ -79,14 +79,14 @@ contract VariableExample {
 }
 ```
 
-📌 3. Arrays in Solidity
+## 📌 3. Arrays in Solidity
 
 Arrays store multiple items of the same type.
-🔹 Fixed-size Array
+### 🔹 Fixed-size Array
 
 uint[3] fixedArray = [1, 2, 3];
 
-🔹 Dynamic-size Array
+### 🔹 Dynamic-size Array
 
 uint[] public dynamicArray;
 
@@ -94,13 +94,13 @@ function addElement(uint value) public {
     dynamicArray.push(value);
 }
 
-🔹 Common Array Functions
+### 🔹 Common Array Functions
 Function	Description
 push(value)	Adds an element to the end
 pop()	Removes the last element
 length	Returns the number of elements
 delete arr[i]	Resets the value at index i to default
-🔹 Example
+### 🔹 Example
 ```solidity
 pragma solidity ^0.8.0;
 
@@ -116,22 +116,22 @@ contract ArrayExample {
     }
 }
 ```
-📌 4. Functions in Solidity
+## 📌 4. Functions in Solidity
 
 Functions are reusable blocks of code that perform actions.
-🔹 Syntax
+### 🔹 Syntax
 
 function functionName([parameters]) [visibility] [modifiers] [returns(returnType)] {
     // logic
 }
 
-🔹 Visibility
+### 🔹 Visibility
 Visibility	Description
 public	Accessible internally and externally
 private	Accessible only within the declaring contract
 internal	Accessible in the contract and derived contracts
 external	Callable only from external accounts or contracts
-🔹 Function Modifiers
+### 🔹 Function Modifiers
 
     view: Does not modify the contract state
 
@@ -139,7 +139,7 @@ external	Callable only from external accounts or contracts
 
     payable: Function can receive Ether
 
-🔹 Public Function Example
+### 🔹 Public Function Example
 
 pragma solidity ^0.8.0;
 
@@ -149,7 +149,7 @@ contract Math {
     }
 }
 
-🔹 Private Function Example
+### 🔹 Private Function Example
 ```solidity
 pragma solidity ^0.8.0;
 
